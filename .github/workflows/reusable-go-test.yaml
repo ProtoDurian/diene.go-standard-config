@@ -17,7 +17,7 @@ jobs:
       - nscloud-cache-size-50gb
       - nscloud-cache-tag-atomi-nix-store-cache-linux-amd64
     steps:
-      - uses: AtomiCloud/actions.setup-nix@v3
+      - uses: AtomiCloud/actions.setup-nix@v4
       - uses: AtomiCloud/actions.cache-go@v2
       # This library's TestHelper IS Testcontainers glue, so its meta tier boots
       # real containers to prove the emitted blocks address a live dependency.
